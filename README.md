@@ -4,7 +4,7 @@ This is a tool that could perform the required HRTF preparation process for mach
 
 The function signal flow:
 
-![image](https://user-images.githubusercontent.com/25059141/42374794-37cadb82-8111-11e8-87bd-37e22e728f38.png)
+![image](https://user-images.githubusercontent.com/25059141/42376052-ab8a15c0-8115-11e8-9c94-8dbdaee9e192.png)
 
 
 # Plot HRTF measurements in 3D
