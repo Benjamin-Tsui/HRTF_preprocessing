@@ -4,7 +4,7 @@ This is a Matlab tool that could perform the required HRTF preparation process f
 
 This tool consists of different functional building blocks. The main function of this toolbox is preprocess_SOFA.m. The input variables consist of: SOFA files or related folders (input_files), range of tolerance in angle matching (angle_range), measurement distance error tolerance (dist_range) and the name of output folder(output_dir). The function will automatically find the best matching angles, normalise with the proper attributes and save them in a new folder as dictated by the user.
 
-## Main function: preprocess_SOFA.m
+### Main function: preprocess_SOFA.m
 
 Input (with examples): 
 1. input = {'ITA_HRTF_Database/SOFA'};     % folder that contains sofa file
@@ -38,7 +38,7 @@ Output:
  
 * Detail descriptions are in the script
 
-## Pipeline:
+### Pipeline:
 1. Check SOFA file.
 2. Organise and fix abnormal SOFA files (may require user’s input to decide what to keep if there is an abnormal SOFA file),
 3. Find SOFA files that can represent other files with a similar angular distribution (to improve speed).
@@ -48,12 +48,12 @@ Output:
 7. Output summary of the new files. (new file names, remaining measurement angles and notes about the file if there is any modification)
 
 
-## The function signal flow:
+### The function signal flow:
 
 ![image](https://user-images.githubusercontent.com/25059141/42376052-ab8a15c0-8115-11e8-9c94-8dbdaee9e192.png)
 
 
-## Using the toolbox:
+### Using the toolbox:
 
 The suggested input parameters in the main function preprocess_SOFA.m includes SOFA files or related folders (input_files), range of tolerance in angle matching (angle_range), measurement distance error tolerance (dist_range) and the name of output folder (output_dir). Before going through the preparation process, the function will first check all the input attributes, especially whether the appointed output folder already exists. If the folder exists, users can decide whether to overwrite it.
 
@@ -65,6 +65,9 @@ By pressing any key to continue, the function will normalise and save the proces
 
 
 
+
+
+
 # Plot HRTF measurements in 3D
 
 The plot_3d_angle.m is a function allows users to plot all HRTF measurement point in three dimensional. It is similar to the SOFAplotGeometry in the original SOFA function but with more flexibility. Firstly, the input besides accepting pre-loaded SOFA struct, this function also accept directly input SOFA files without loading it, or even just the azimuth angle, elevation angle and distance. Secondly, this function has the flexibility to plot different measurements on the same plot with different colour or markers. It helps in comparing the differences between different measurements. Finally, the marker's locations on the graph are displayed in polar coordinates instead of the default Cartesian coordinates, by selecting the marker on the graph, it will show the polar coordinates of the selected point in three dimensions.
@@ -72,7 +75,7 @@ The plot_3d_angle.m is a function allows users to plot all HRTF measurement poin
 ![image](https://user-images.githubusercontent.com/25059141/42374728-fdf9cfa8-8110-11e8-99a9-1eeebe8ac973.png)
 
 
-## Function: plot_3d_angles
+### Function: plot_3d_angles
 
 Input (3 option):
 
