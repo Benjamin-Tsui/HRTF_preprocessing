@@ -1,0 +1,7 @@
+History
+2016-12-14 	Dimensions.xlsx added 
+2017-04-10 	P_26.stl replaced
+2017-04-28	Dimensions of subj. 14 and sketches added 
+2017-04-28	Gender added
+2017-05-02	physical dimension added
+2017-08-10	SOFA: description fields edited
