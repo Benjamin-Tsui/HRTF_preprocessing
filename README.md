@@ -4,6 +4,7 @@ This is a Matlab tool that could perform the required HRTF preparation process f
 
 This tool consists of different functional building blocks. The main function of this toolbox is preprocess_SOFA.m. The input variables consist of: SOFA files or related folders (input_files), range of tolerance in angle matching (angle_range), measurement distance error tolerance (dist_range) and the name of output folder(output_dir). The function will automatically find the best matching angles, normalise with the proper attributes and save them in a new folder as dictated by the user.
 
+[embed]https://github.com/Benjamin-Tsui/HRTF_preprocessing/blob/master/AES_NY_Poster.pdf[/embed]
 ![image](https://github.com/Benjamin-Tsui/HRTF_preprocessing/blob/master/AES_NY_Poster.pdf)
 
 ### Main function: preprocess_SOFA.m
