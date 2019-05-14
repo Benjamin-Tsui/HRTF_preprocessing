@@ -1,6 +1,6 @@
 # HRTF_preprocessing
 
-### Make sure your have Mapping Toolbox installed
+### Important: Make sure your MATLAB has Mapping Toolbox installed
 This is a Matlab tool that could perform the required HRTF preparation process for machine learning in a fast and robust way. It could check common errors in SOFA files (e.g. missing data, abnormal measurement distribution), modifies SOFA files (e.g. remove abnormal data), finds common measurement angles within a range, finds the best normalise attributes (HRIR length, sampling frequency), normalises and save the modified measurements as new SOFA files.
 
 This tool consists of different functional building blocks. The main function of this toolbox is preprocess_SOFA.m. The input variables consist of: SOFA files or related folders (input_files), range of tolerance in angle matching (angle_range), measurement distance error tolerance (dist_range) and the name of output folder(output_dir). The function will automatically find the best matching angles, normalise with the proper attributes and save them in a new folder as dictated by the user.
